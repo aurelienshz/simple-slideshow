@@ -70,15 +70,7 @@ SLIDESHOW - general style rules :
 /********************* READ ME *********************/
 /* This part is a kind of Font-Awesome emulation : */
 /* If you have font-awesome on your website, simply delete this part */
-.fa-circle-o::before {
-	position: relative;
-	/*bottom: -0.012em;*/
-	content: '\25CB';
-}
-.fa-circle::before {
-	position: relative;
-	content: "\25CF";
-}
+
 /***************************************************/
 
 /*Previous and next buttons : */
@@ -108,6 +100,12 @@ SLIDESHOW - general style rules :
     text-decoration: none;
     color: #287DFF;
 }
+.previous:active, .next:active {
+    background: lightgray;
+    color: #287DFF;
+    text-decoration: none;
+    color: black;
+}
 
 /* Slides and their container (added by the JS) : */
 .slideshow-slides {
@@ -120,13 +118,18 @@ SLIDESHOW - general style rules :
 	height: 100%;
 	overflow: auto;
 }
-/*Dots on the bottom saying where we are :*/
+/* Dots on the bottom showing which slide is displayed */
 .slideshow-nav {
     text-align: center;
 	font-size: 1.5em;
     margin: .5em 0 0 1em;
 	line-height: 1em;
+	color: lightgray;
 }
-.slideshow-nav span {
+.slideshow-nav span::before, .slideshow-nav span:before {
+	content: '\25CF';
     margin: 0 .5em;
+}
+.nav-active {
+	color: black;
 }

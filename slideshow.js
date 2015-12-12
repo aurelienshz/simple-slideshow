@@ -68,7 +68,7 @@ function Slideshow(container) {
         nav.className = 'slideshow-nav';
         for(var i in this.slides) {
             icon = document.createElement('SPAN');
-            icon.className = 'fa fa-circle-o';
+            icon.className = 'nav';
             nav.appendChild(icon);
         }
         container.appendChild(nav); //, container.childNodes[0]
@@ -177,8 +177,8 @@ function Slideshow(container) {
         for(var i in this.container.childNodes) {
             if(this.container.childNodes[i].className == 'slideshow-nav') {
                 for(var j in this.container.childNodes[i].childNodes) {
-                    if(j==nav) {this.container.childNodes[i].childNodes[j].className = 'fa fa-circle'; }
-                    else {this.container.childNodes[i].childNodes[j].className = 'fa fa-circle-o'; }
+                    if(j==nav) {this.container.childNodes[i].childNodes[j].className = 'nav-active'; }
+                    else {this.container.childNodes[i].childNodes[j].className = 'nav'; }
                 }
             }
         }
