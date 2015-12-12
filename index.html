@@ -1,0 +1,37 @@
+<!--
+###    SUPER-SIMPLE SLIDESHOW by aurelienshz    ###
+
+Distributed under The MIT License (MIT).
+tl;dr : you're free to do anything you want with the code as long as you provide attribution back to me and don’t hold me liable.
+See LICENSE file in the repo.
+
+Copyright (c) 2015 Aurélien Schiltz - All Rights Reserved.
+
+-->
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+    <h1>Super-simple slideshow <span>by aurelienshz</span></h1>
+
+    <!-- To create a slideshow : simply create a block with the class "slideshow".
+    All its children will be the slides of the slideshow.
+    Note : The slides *MUST* be <div> elements, otherwise they won't be detected.
+    You can then specify the width and height of the container (see style.css) -->
+    <!-- You may have several slideshows in a single page. See new.js to understand how to manage this feature -->
+
+        <div class="slideshow" id="demo">
+            <div id="blue"><p>WOW</p></div>
+            <div id="green"><p>VERY SLIDESHOW</p></div>
+            <div id="gray"><p>MANY BEAUTIFUL</p></div>
+            <div id="red"><p>MUCH FUN</p></div>
+            <div id="blue"><p>SUCH SIMPLE</p></div>
+            <div id="green"><p>VERY JS</p></div>
+        </div>
+
+    <script src="slideshow.js"></script>
+
+</body>
+</html>

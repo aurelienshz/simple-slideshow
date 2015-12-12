@@ -1,0 +1,132 @@
+/*
+
+###    SUPER-SIMPLE SLIDESHOW by aurelienshz    ###
+
+Distributed under The MIT License (MIT).
+tl;dr : you're free to do anything you want with the code as long as you provide attribution back to me and don’t hold me liable.
+See LICENSE file in the repo.
+
+Copyright (c) 2015 Aurélien Schiltz - All Rights Reserved.
+
+*/
+
+
+
+
+
+
+
+/*
+
+SLIDESHOW - specific style rules for the provided example
+
+*/
+
+/* Set the height of the container, and you're done : */
+#demo {
+	height: 300px;
+	margin-bottom: 4em;
+}
+/* Decoration - you can simply delete this part */
+#red {background-color: red; }
+#blue {background-color: blue; }
+#green {background-color: green; }
+#gray {background-color: gray; }
+
+#demo p {
+	width: 60%;
+	height: 100px;
+	margin: 100px auto;
+	line-height: 100px;
+	color: #FAFAFA;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Comic neue",sans-serif;
+}
+
+h1 > span {
+	font-size: .7em;
+	font-weight: normal;
+	color: gray;
+}
+
+body {
+	width: 75%;
+	min-width: 600px;
+	margin: 30px auto;
+	padding: 0;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+
+/*
+
+SLIDESHOW - general style rules :
+
+*/
+
+
+/********************* READ ME *********************/
+/* This part is a kind of Font-Awesome emulation : */
+/* If you have font-awesome on your website, simply delete this part */
+.fa-circle-o::before {
+	position: relative;
+	/*bottom: -0.012em;*/
+	content: '\25CB';
+}
+.fa-circle::before {
+	position: relative;
+	content: "\25CF";
+}
+/***************************************************/
+
+/*Previous and next buttons : */
+.previous, .next {
+	width: 5%;
+	height: 100%;
+	font-size: 2em;
+	font-weight:bold;
+	text-decoration: none;
+    text-align: center;
+	display: table-cell;
+}
+.previous {
+	float: left;
+}
+.next {
+	float: right;
+}
+.previous span, .next span {
+	line-height: 0;
+	position:relative;
+	top:50%;
+}
+.previous:hover, .next:hover {
+    cursor: pointer;
+    background: #FAFAFA;
+    text-decoration: none;
+    color: #287DFF;
+}
+
+/* Slides and their container (added by the JS) : */
+.slideshow-slides {
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+}
+.slideshow .slideshow-slides > div {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+/*Dots on the bottom saying where we are :*/
+.slideshow-nav {
+    text-align: center;
+	font-size: 1.5em;
+    margin: .5em 0 0 1em;
+	line-height: 1em;
+}
+.slideshow-nav span {
+    margin: 0 .5em;
+}
