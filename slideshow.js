@@ -195,9 +195,9 @@ function Slideshow(container) {
 
 
 (function() {
-	var slideshows = document.getElementsByClassName('slideshow'),
-        running = [];
-     for(var i = 0; i<slideshows.length; i++) {
+	var slideshows = document.getElementsByClassName('slideshow');
+
+    for(var i = 0; i<slideshows.length; i++) {
         new Slideshow(slideshows[i]);
     }
 })();
