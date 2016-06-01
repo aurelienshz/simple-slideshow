@@ -18,7 +18,7 @@ Copyright (c) 2015 Aurélien Schiltz - All Rights Reserved.
 
 /*
 
-SLIDESHOW - specific style rules for the provided example
+	SLIDESHOW - specific style rules for the provided example
 
 */
 
@@ -62,16 +62,9 @@ body {
 
 /*
 
-SLIDESHOW - general style rules :
+	SLIDESHOW - general style rules :
 
 */
-
-
-/********************* READ ME *********************/
-/* This part is a kind of Font-Awesome emulation : */
-/* If you have font-awesome on your website, simply delete this part */
-
-/***************************************************/
 
 /*Previous and next buttons : */
 .previous, .next {
